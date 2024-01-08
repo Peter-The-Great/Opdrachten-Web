@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, Card } from 'react-bootstrap';
-import { useNavigate  } from 'react-router-dom';
+import { navigate } from '@reach/router';
 
 const Book = ({
   id,
@@ -11,7 +11,6 @@ const Book = ({
   date,
   handleRemoveBook
 }) => {
-  const history = navigate();
 
   return (
     <Card style={{ width: '18rem' }} className="book">
